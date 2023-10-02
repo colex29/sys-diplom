@@ -1,0 +1,9 @@
+#cloud-config
+users:
+ - name: prokhorov
+   groups: sudo
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+   ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyPG2rBPbfPVc6rq+mVvat1HKC334yv2YeiDaAA0F+r+OukgXv9hb9rhjy7x2hLXhnWMsgAlXKVg1arVT2EE5rodIZBxOPqjkN2tmFZK92eaoubSSAlYHJ5JOnP3WZp4PhfxgiP5WWq5Lbhe0QbfgKrHdXL48aJcs3RoSThm2PiGP0JPFeGAh9K4m4jBM5fQp+S3/zhnbP6GUwhoDLgQyi5TPMME8vYHu1EYwM8x8/snnY4yw/uuV5nx9q45r3vdXZk6Ofd7kZizrpN587spv97HZFLWE3m70jZK+WWIK7cQBNYLy2yv65dAZOWEAv0e5oQ1MJ+dCAwoPatJEE8IFiI3na0bBLmSFj+zaWNoOGTKMt+FWbqG+qLQMciNiP88w9AXLI8mUEp2lKW7NArRRIsJ5sYQB0jGFQN8+vEA1pJIWYQODtSHcKoXBWokLqxB3dRKSTTG4sUg1u/bIoriLcp5hKQk2+JuLk+jctOEZWQR+LcyziqSO3qjRq9LO57Rk= prokhorov@debian
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIASUR1ZZXUrejj2w6EaeVyH09j2sIOGRigmqWIONRQr1 prokhorov@debian
