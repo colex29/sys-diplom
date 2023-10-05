@@ -1,7 +1,6 @@
 ---
-- name: Nginx playbook
+- hosts: web
   remote_user: prokhorov
-  hosts: web
   become: yes
   become_method: sudo
   roles:
