@@ -1,2 +1,6 @@
 ---
-# handlers file for zabbix
+    - name: Start and enable Zabbix Agent service
+      service:
+        name: zabbix-agent
+        state: started
+        enabled: yes
