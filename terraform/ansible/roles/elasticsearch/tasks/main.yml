@@ -37,3 +37,8 @@
         daemon_reload: true
         name: elasticsearch.service
         state: started
+        
+    - name: Systemctl enable elasticsearch
+      systemd:
+        name: elasticsearch.service
+        state: restarted
