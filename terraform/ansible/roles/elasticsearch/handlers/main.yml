@@ -1,2 +1,5 @@
----
-# handlers file for elasticsearch
+---    
+- name: Systemctl enable elasticsearch
+      systemd:
+        name: elasticsearch.service
+        state: restarted
