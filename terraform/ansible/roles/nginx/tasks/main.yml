@@ -21,5 +21,3 @@
         owner: root
         group: sudo
         mode: "0644"
-  
-    - name: start nginx handlers
