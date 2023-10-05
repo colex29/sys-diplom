@@ -1,1 +1,5 @@
-
+---
+  - name: Systemctl enable filebeat
+    ansible.builtin.service:
+       name: filebeat.service
+       enabled: yes
